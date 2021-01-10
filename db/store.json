@@ -1,0 +1,59 @@
+{
+    "user": [
+        {
+            "user": "2",
+            "views": "300",
+            "id": "9378739a-7a04-4e7b-8bbf-8d1547ac0420"
+        },
+        {
+            "user": "2",
+            "views": "300",
+            "id": "9653d927-d539-4d22-9355-dd4a254bd505"
+        }
+    ],
+    "pokemon": [
+        {
+            "name": "pikachu",
+            "power": "200",
+            "id": "d0a089d8-2807-4c3d-b427-2520eb4bfc74"
+        },
+        {
+            "name": "bulbasaur",
+            "power": "10",
+            "id": "8a47840e-12e7-4d19-ad75-1831a7e40e8e"
+        },
+        {
+            "name": "menasaur",
+            "power": "1000",
+            "id": "b16d4c67-6a71-4878-addd-c24839561d0e"
+        },
+        {
+            "name": "menasaur",
+            "power": "1000",
+            "id": "dcc265bd-66b6-4576-9730-59cb6433ce52"
+        },
+        {
+            "name": "benasaur",
+            "power": "1000",
+            "id": "bb4715f6-e883-4dcf-a475-7d8448193528"
+        },
+        {
+            "name": "pikachu",
+            "power": "1000",
+            "id": "47be3cdf-94a0-42d0-ac27-82d19a89fd05"
+        },
+        {
+            "name": "pikachhhhhu",
+            "power": "1000",
+            "id": "f107999c-6d29-490c-8902-02cd2a580753"
+        }
+
+    ],
+    "logicalAND": [
+        {
+            "user": "2",
+            "views": "300",
+            "id": "07869888-600b-406d-8298-c924285672de"
+        }
+    ]
+}
