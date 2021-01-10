@@ -10,18 +10,23 @@ Most of the front-end developers require fake REST APIs for quick prototyping an
 ### API Endpoints
 
 GET<br>
-``/`` Displays all the entities that you have created
+``/``<br>
+Displays all the entities that you have created
 
 POST<br>
-``/:entityName`` For creating a new entity<br>
+``/:entityName``<br>
+For creating a new entity<br>
 
-BODY ``{"key":"value"}``
+BODY<br>
+``{"key":"value"}``
 
 PUT<br>
-``/:entityName/:id`` For updating a specific entity
+``/:entityName/:id``<br>
+For updating a specific entity
 
 DELETE<br>
-``/:entityName/:id`` For deleting a specific entity
+``/:entityName/:id``<br>
+For deleting a specific entity
 
 ### Filtering Results
 
