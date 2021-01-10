@@ -1,11 +1,16 @@
 # Node-Mom
-Mother of all REST APIs mock server built with Node and Express from ground up.
+Mother of all REST mock servers built with Node and Express from ground up.
 
 ### What is this project all about?
 This is a backend service that lets you create REST APIs without having to write any code from your end.
 
 ### What is the need of this project?
 Most of the front-end developers require fake REST APIs for quick prototyping and testing, and this project can be easily consumed by them in order to test and check the REST API of their choices.
+
+### Usage
+- ``npm install``
+- ``cd Node-Mom``
+- ``node index.js``
 
 ### API Endpoints
 
@@ -50,4 +55,4 @@ For deleting a specific entity
 ### Drawbacks
 - Search isn't supported for nested JSON objects
 
-
+#### Please star the repository if you liked it
