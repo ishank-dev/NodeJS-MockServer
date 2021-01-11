@@ -12,7 +12,7 @@ Note: There is no validation added so that the entities created are as dynamic a
 
 ### Usage
 - ``npm install``
-- ``cd Node-Mom``
+- ``cd node-mom``
 - ``node index.js``
 
 ### API Endpoints
