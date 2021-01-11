@@ -1,6 +1,6 @@
 # node-mom
 
-Mother of all REST mock servers built with Node and Express from ground up.
+A mock JSON REST server
 
 ### What is this project all about?
 This product is a backend-as-a-service (BaaS) that lets you create and test REST APIs without having to write any code for the backend.
