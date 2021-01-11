@@ -62,5 +62,5 @@ For deleting a specific entity
 ### Drawbacks
 - Search isn't supported for nested JSON objects
 
-#### Please star the repository if you liked it, (this is the first time I made any tool to help developers :p)
+#### Please star the repository if you liked it!
 #### Inspired from json-server
