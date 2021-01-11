@@ -3,7 +3,7 @@
 Mother of all REST mock servers built with Node and Express from ground up.
 
 ### What is this project all about?
-This product is a backend-as-a-service (BaaS) that lets you create and test REST APIs without having to write any code from your end.
+This product is a backend-as-a-service (BaaS) that lets you create and test REST APIs without having to write any code for the backend.
 
 ### What is the need of this project?
 Most of the front-end developers require fake REST APIs for quick prototyping and testing, and this project can be easily consumed by letting you build entities of your choice, performing CRUD operations and filters on top of it.
@@ -62,5 +62,5 @@ For deleting a specific entity
 ### Drawbacks
 - Search isn't supported for nested JSON objects
 
-#### Please star the repository if you liked it
+#### Please star the repository if you liked it, (this is the first time I made any tool to help developers :p)
 #### Inspired from json-server
