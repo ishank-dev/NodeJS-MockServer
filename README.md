@@ -19,6 +19,7 @@ Note: There is no validation added so that the entities created are as dynamic a
 
 ###### GET<br>
 ``/``<br>
+
 Displays all the entities that you have created
 
 ###### POST<br>
