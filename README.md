@@ -23,16 +23,20 @@ Displays all the entities that you have created
 
 ###### POST<br>
 ``/:entityName``<br>
-For creating a new entity (Add as many key value pair as you wish)<br>
+
 - BODY<br>
 ``{"key":"value"}``
 
+For creating a new entity (Add as many key value pair as you wish)<br>
+
 ###### PUT<br>
 ``/:entityName/:id``<br>
+
 For updating a specific entity
 
 ###### DELETE<br>
 ``/:entityName/:id``<br>
+
 For deleting a specific entity
 
 ### Filtering Results
