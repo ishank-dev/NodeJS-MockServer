@@ -1,14 +1,14 @@
-# Node-Mom
+# node-mom
 
 Mother of all REST mock servers built with Node and Express from ground up.
 
 ### What is this project all about?
-This is a backend service that lets you create REST APIs without having to write any code from your end.
+This product is a backend-as-a-service (BaaS) that lets you create and test REST APIs without having to write any code from your end.
 
 ### What is the need of this project?
-Most of the front-end developers require fake REST APIs for quick prototyping and testing, and this project can be easily consumed by them by letting you build entities of your choice and performing CRUD operations and filters on it.
+Most of the front-end developers require fake REST APIs for quick prototyping and testing, and this project can be easily consumed by letting you build entities of your choice, performing CRUD operations and filters on top of it.
 
-Note: There is no validation so that the entities created are as dynamic as possible.
+Note: There is no validation added so that the entities created are as dynamic as possible.
 
 ### Usage
 - ``npm install``
@@ -24,15 +24,14 @@ Displays all the entities that you have created
 ###### POST<br>
 ``/:entityName``<br>
 For creating a new entity (Add as many key value pair as you wish)<br>
-
-BODY<br>
+- BODY<br>
 ``{"key":"value"}``
 
-PUT<br>
+###### PUT<br>
 ``/:entityName/:id``<br>
 For updating a specific entity
 
-DELETE<br>
+###### DELETE<br>
 ``/:entityName/:id``<br>
 For deleting a specific entity
 
