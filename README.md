@@ -25,7 +25,7 @@ Displays all the entities that you have created
 ###### POST<br>
 ``/:entityName``<br>
 
-- BODY<br>
+``BODY``<br>
 ``{"key":"value"}``
 
 For creating a new entity (Add as many key value pair as you wish)<br>
@@ -54,7 +54,7 @@ For deleting a specific entity
 #### Filtering by order
 ``/:entityName?order=<asc/dsc>``(Gives ascending results by default)
 
-### Key Features of this backend servidce
+### Key Features of this backend service
 - Persistant storage in a file called store.json, where you can add your own JSON object
 - No knowledge of backend + database needed to build the REST APIs
 - Supports multiple search queries while filtering
