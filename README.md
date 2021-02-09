@@ -1,4 +1,4 @@
-# node-mom
+# NodeJS Mock Server
 
 A mock JSON REST server
 
