@@ -1,66 +1,48 @@
-# NodeJS Mock Server
+# Mock Server Documentation
 
-A mock JSON REST server
+This mock server is built using **Node.js** and **Express** to provide a simple way to create, read, update, and delete (CRUD) entities. All data is stored in an in-memory object (`store`) and persisted in a file called `store.json`.  
 
-### What is this project all about?
-This product is a backend-as-a-service (BaaS) that lets you create and test REST APIs without having to write any code for the backend.
+## Main Functionalities
 
-### What is the need of this project?
-Most of the front-end developers require fake REST APIs for quick prototyping and testing, and this project can be easily consumed by letting you build entities of your choice, performing CRUD operations and filters on top of it.
+1. **Initialize Store**  
+   - Reads from `store.json` once on server startup to populate the `store` object in memory.
 
-Note: There is no validation added so that the entities created are as dynamic as possible.
+2. **Create Entities (POST)**  
+   - Accepts JSON data to create new entities under any specified entity type.
+   - Automatically generates a unique `id` (UUID).
 
-### Usage
-- ``npm install``
-- ``cd node-mom``
-- ``node index.js``
+3. **Read Entities (GET)**  
+   - Retrieves a list of **all entity types** or all records of a specific entity type.
+   - Allows fetching a **single entity** by its `id`.
 
-### API Endpoints
+4. **Update Entities (PUT)**  
+   - Updates the properties of an existing entity without allowing changes to the entity’s `id`.
 
-###### GET<br>
-``/``<br>
+5. **Delete Entities (DELETE)**  
+   - Removes a specific entity by its `id`.
 
-Displays all the entities that you have created
+6. **Write Back to `store.json`**  
+   - After any POST, PUT, or DELETE operation, the updated data is written to `store.json` for persistence.
 
-###### POST<br>
-``/:entityName``<br>
+---
 
-``BODY``<br>
-``{"key":"value"}``
+## Filters and Query Parameters
 
-For creating a new entity (Add as many key value pair as you wish)<br>
+When making **GET** requests for a specific entity type, you can combine **filters**, **search**, and **sorting** parameters:
 
-###### PUT<br>
-``/:entityName/:id``<br>
+1. **Field-based Filters**  
+   - Query format: `?key=value`  
+   - Filters out results that match the specified key-value pair(s).
+   - Example: `GET /products?category=Electronics`
 
-For updating a specific entity
+2. **Search**  
+   - Query format: `?_q=term`  
+   - Searches for the provided term (`term`) across **all fields** of the entities.
+   - Example: `GET /products?_q=phone`
 
-###### DELETE<br>
-``/:entityName/:id``<br>
+3. **Sorting**  
+   - Query format: `?_sort=<field>&_order=asc|desc`  
+   - Sorts the resulting array based on the provided field in either ascending or descending order.
+   - Example: `GET /products?_sort=price&_order=desc`
 
-For deleting a specific entity
-
-### Filtering Results
-
-#### Filtering by key value pair
-``/:entityName?<key=value>``
-
-#### Filtering by search
-``/:entityName?_q=<value that you want to search>``
-
-#### Filtering by sort
-``/:entityName?_sort=<key>`` 
-
-#### Filtering by order
-``/:entityName?order=<asc/dsc>``(Gives ascending results by default)
-
-### Key Features of this backend service
-- Persistant storage in a file called store.json, where you can add your own JSON object
-- No knowledge of backend + database needed to build the REST APIs
-- Supports multiple search queries while filtering
-
-### Drawbacks
-- Search isn't supported for nested JSON objects
-
-#### Please star the repository if you liked it!
-#### Inspired from json-server
+**Note**: All these operations (filters, search, sorting) can be chained together:
