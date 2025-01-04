@@ -33,16 +33,37 @@ When making **GET** requests for a specific entity type, you can combine **filte
 1. **Field-based Filters**  
    - Query format: `?key=value`  
    - Filters out results that match the specified key-value pair(s).
-   - Example: `GET /products?category=Electronics`
+   - Example:  
+     ```
+     GET /products?category=Electronics
+     ```
 
 2. **Search**  
    - Query format: `?_q=term`  
    - Searches for the provided term (`term`) across **all fields** of the entities.
-   - Example: `GET /products?_q=phone`
+   - **Multiple Search Terms**: You can include multiple `?_q` parameters to search for different terms as an **OR** condition. For example:
+     ```
+     GET /products?_q=phone&_q=tv
+     ```
+     This will return all products whose fields include `phone` **OR** `tv` (case-insensitive).
+   - Example (single term):  
+     ```
+     GET /products?_q=phone
+     ```
 
 3. **Sorting**  
    - Query format: `?_sort=<field>&_order=asc|desc`  
    - Sorts the resulting array based on the provided field in either ascending or descending order.
-   - Example: `GET /products?_sort=price&_order=desc`
+   - Example:  
+     ```
+     GET /products?_sort=price&_order=desc
+     ```
 
-**Note**: All these operations (filters, search, sorting) can be chained together:
+**Note**: All these operations (filters, search, sorting) can be chained together. For example:
+
+```
+GET /products?_q=phone&_sort=price&_order=desc&category=Electronics
+```
+
+**Happy Mocking!**
+
